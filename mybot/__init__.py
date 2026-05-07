@@ -5,6 +5,22 @@ from mybot.planner import Planner, Task
 from mybot.llm import LLMClient, OpenAIClient, MockLLMClient
 from mybot.session import Session
 from mybot.orchestrator import Orchestrator
+from mybot.travel.models import (
+    TravelPlan,
+    DayItinerary,
+    Attraction,
+    Restaurant,
+    Hotel,
+    WeatherInfo,
+    TravelPreference,
+)
+from mybot.travel.agents import (
+    WeatherAgent,
+    HotelAgent,
+    FoodAgent,
+    ItineraryAgent,
+)
+from mybot.travel.planner import TravelPlanner
 
 __version__ = "0.1.0"
 __all__ = [
@@ -20,4 +36,16 @@ __all__ = [
     "MockLLMClient",
     "Session",
     "Orchestrator",
+    "TravelPlan",
+    "DayItinerary",
+    "Attraction",
+    "Restaurant",
+    "Hotel",
+    "WeatherInfo",
+    "TravelPreference",
+    "WeatherAgent",
+    "HotelAgent",
+    "FoodAgent",
+    "ItineraryAgent",
+    "TravelPlanner",
 ]
